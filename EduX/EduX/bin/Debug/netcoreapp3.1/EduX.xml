@@ -1,0 +1,420 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EduX</name>
+    </assembly>
+    <members>
+        <member name="M:EduX.Controllers.AlunoTurmaController.Get">
+            <summary>
+            Mostra todas os alunos cadastrados
+            </summary>
+            <returns>Lista com todos os alunos</returns>
+        </member>
+        <member name="M:EduX.Controllers.AlunoTurmaController.Get(System.Guid)">
+            <summary>
+            Mostra um único aluno
+            </summary>
+            <param name="id">ID do aluno</param>
+            <returns>Um aluno</returns>
+        </member>
+        <member name="M:EduX.Controllers.AlunoTurmaController.Post(EduX.Domains.AlunoTurma)">
+            <summary>
+            Cadastra um novo aluno
+            </summary>
+            <param name="alunoT">Objeto completo de aluno</param>
+            <returns>Aluno cadastrado</returns>
+        </member>
+        <member name="M:EduX.Controllers.AlunoTurmaController.Put(System.Guid,EduX.Domains.AlunoTurma)">
+            <summary>
+            Altera determinado aluno
+            </summary>
+            <param name="id">ID de aluno</param>
+            <param name="alunoT">Objeto aluno com as alterações</param>
+            <returns>Info do aluno alterado</returns>
+        </member>
+        <member name="M:EduX.Controllers.AlunoTurmaController.Delete(System.Guid)">
+            <summary>
+            Exclui um aluno
+            </summary>
+            <param name="id">ID do aluno</param>
+            <returns>ID excluído</returns>
+        </member>
+        <member name="M:EduX.Controllers.CategoriasController.Get">
+            <summary>
+            Mostra todas as categorias cadastradas
+            </summary>
+            <returns>Lista com todas as categorias</returns>
+        </member>
+        <member name="M:EduX.Controllers.CategoriasController.Get(System.Guid)">
+            <summary>
+            Mostra uma única categoria
+            </summary>
+            <param name="id">ID da categoria</param>
+            <returns>Uma categoria</returns>
+        </member>
+        <member name="M:EduX.Controllers.CategoriasController.Post(EduX.Domains.Categoria)">
+            <summary>
+            Cadastra uma nova categoria
+            </summary>
+            <param name="categoria">Objeto completo de categoria</param>
+            <returns>Categoria cadastrada</returns>
+        </member>
+        <member name="M:EduX.Controllers.CategoriasController.Put(System.Guid,EduX.Domains.Categoria)">
+            <summary>
+            Altera determinada categoria
+            </summary>
+            <param name="id">ID de categoria</param>
+            <param name="categoria">Objeto categoria com as alterações</param>
+            <returns>Info da categoria alterada</returns>
+        </member>
+        <member name="M:EduX.Controllers.CategoriasController.Delete(System.Guid)">
+            <summary>
+            Exclui uma categoria
+            </summary>
+            <param name="id">ID da categoria</param>
+            <returns>ID excluído</returns>
+        </member>
+        <member name="M:EduX.Controllers.CursoController.Get">
+            <summary>
+            Mostra todos os cursos cadastrados
+            </summary>
+            <returns>Lista com todos os cursos</returns>
+        </member>
+        <member name="M:EduX.Controllers.CursoController.Get(System.Guid)">
+            <summary>
+            Mostra um único cuso
+            </summary>
+            <param name="id">ID de curso</param>
+            <returns>Um curso</returns>
+        </member>
+        <member name="M:EduX.Controllers.CursoController.Put(System.Guid,EduX.Domains.Curso)">
+            <summary>
+            Altera determinado curso
+            </summary>
+            <param name="id">ID do curso</param>
+            <param name="curso">Objeto curso com suas alterações</param>
+            <returns>Info do curso alterado</returns>
+        </member>
+        <member name="M:EduX.Controllers.CursoController.Post(EduX.Domains.Curso)">
+            <summary>
+            Cadastra um novo curso
+            </summary>
+            <param name="curso">Objeto completo de curso</param>
+            <returns>Curso cadastrado</returns>
+        </member>
+        <member name="M:EduX.Controllers.CursoController.Delete(System.Guid)">
+            <summary>
+            Exclui um curso
+            </summary>
+            <param name="id">ID do curso</param>
+            <returns>ID excluído</returns>
+        </member>
+        <member name="M:EduX.Controllers.CurtidaController.Get">
+            <summary>
+            Mostra todas as curtidas cadastradas
+            </summary>
+            <returns>Lista com todas as curtidas</returns>
+        </member>
+        <member name="M:EduX.Controllers.CurtidaController.Get(System.Guid)">
+            <summary>
+            Mostra uma única curtida
+            </summary>
+            <param name="id">ID da curtida</param>
+            <returns>Uma curtida</returns>
+        </member>
+        <member name="M:EduX.Controllers.CurtidaController.Post(EduX.Domains.Curtida)">
+            <summary>
+            Cadastra uma nova curtida
+            </summary>
+            <param name="curtida">Objeto completo de curtida</param>
+            <returns>Curtida cadastrada</returns>
+        </member>
+        <member name="M:EduX.Controllers.CurtidaController.Delete(System.Guid)">
+            <summary>
+            Exclui uma curtida
+            </summary>
+            <param name="id">ID da curtida</param>
+            <returns>ID excluído</returns>
+        </member>
+        <member name="M:EduX.Controllers.DicaController.Get">
+            <summary>
+            Mostra todas as dicas cadastradas
+            </summary>
+            <returns>Lista com todas as dicas</returns>
+        </member>
+        <member name="M:EduX.Controllers.DicaController.Get(System.Guid)">
+            <summary>
+            Mostra uma única dica
+            </summary>
+            <param name="id">ID da dica</param>
+            <returns>Uma dica</returns>
+        </member>
+        <member name="M:EduX.Controllers.DicaController.Put(System.Guid,EduX.Domains.Dica)">
+            <summary>
+            Altera determinada dica
+            </summary>
+            <param name="id">ID de dica</param>
+            <param name="dica">Objeto dica com as alterações</param>
+            <returns>Info da dica alterada</returns>
+        </member>
+        <member name="M:EduX.Controllers.DicaController.Post(EduX.Domains.Dica)">
+            <summary>
+            Cadastra uma nova dica
+            </summary>
+            <param name="dica">Objeto completo de dica</param>
+            <returns>Dica cadastrada</returns>
+        </member>
+        <member name="M:EduX.Controllers.DicaController.Delete(System.Guid)">
+            <summary>
+            Exclui uma dica
+            </summary>
+            <param name="id">ID de dica</param>
+            <returns>ID excluído</returns>
+        </member>
+        <member name="M:EduX.Controllers.InstituicaoController.Get">
+            <summary>
+            Mostra todas as instuições cadastradas
+            </summary>
+            <returns>Lista com todas as instuições</returns>
+        </member>
+        <member name="M:EduX.Controllers.InstituicaoController.Get(System.Guid)">
+            <summary>
+            Mostra uma única instituição
+            </summary>
+            <param name="id">ID da instituição</param>
+            <returns>Uma instituição</returns>
+        </member>
+        <member name="M:EduX.Controllers.InstituicaoController.Put(System.Guid,EduX.Domains.Instituicao)">
+            <summary>
+            Altera determinada instituição
+            </summary>
+            <param name="id">ID da instituição</param>
+            <param name="instituicao">Objeto instituição com suas as alterações</param>
+            <returns>Info da instituição alterada</returns>
+        </member>
+        <member name="M:EduX.Controllers.InstituicaoController.Post(EduX.Domains.Instituicao)">
+            <summary>
+            Cadastra uma nova instituição
+            </summary>
+            <param name="instituicao">Objeto completo de instituição</param>
+            <returns>Instituição cadastrada</returns>
+        </member>
+        <member name="M:EduX.Controllers.InstituicaoController.Delete(System.Guid)">
+            <summary>
+            Exclui uma instituição
+            </summary>
+            <param name="id">ID da instituição</param>
+            <returns>ID excluído</returns>
+        </member>
+        <member name="M:EduX.Controllers.ObjetivoAlunoController.Get">
+            <summary>
+            Mostra todos os objetivos, direcionados aos alunos, cadastrados
+            </summary>
+            <returns>Lista com todos os objetivos</returns>
+        </member>
+        <member name="M:EduX.Controllers.ObjetivoAlunoController.Get(System.Guid)">
+            <summary>
+            Mostra um único objetivo
+            </summary>
+            <param name="id">ID do objetivo</param>
+            <returns>Um objetivo</returns>
+        </member>
+        <member name="M:EduX.Controllers.ObjetivoAlunoController.Put(System.Guid,EduX.Domains.ObjetivoAluno)">
+            <summary>
+            Altera determinado objetivo
+            </summary>
+            <param name="id">ID do objetivo</param>
+            <param name="objetivoAluno">Objeto objetivo com suas alterações</param>
+            <returns>Info do objetivo alterado</returns>
+        </member>
+        <member name="M:EduX.Controllers.ObjetivoAlunoController.Post(EduX.Domains.ObjetivoAluno)">
+            <summary>
+            Cadastra um novo objetivo
+            </summary>
+            <param name="objetivoAluno">Objeto completo de objetivo</param>
+            <returns>Objetivo cadastrado</returns>
+        </member>
+        <member name="M:EduX.Controllers.ObjetivoAlunoController.Delete(System.Guid)">
+            <summary>
+            Exclui um objetivo
+            </summary>
+            <param name="id">ID do objetivo</param>
+            <returns>ID excluído</returns>
+        </member>
+        <member name="M:EduX.Controllers.ObjetivosController.Get">
+            <summary>
+            Mostra todo os objetivos cadastrados
+            </summary>
+            <returns>Lista com todos os objetivos cadastrados</returns>
+        </member>
+        <member name="M:EduX.Controllers.ObjetivosController.Get(System.Guid)">
+            <summary>
+            Mostra um único objetivo 
+            </summary>
+            <param name="id">ID do objetivo</param>
+            <returns>Um objetivo</returns>
+        </member>
+        <member name="M:EduX.Controllers.ObjetivosController.Post(EduX.Domains.Objetivo)">
+            <summary>
+            Cadastra um novo objetivo
+            </summary>
+            <param name="objetivo">Objeto completo de objetivo</param>
+            <returns>Objetivo cadastrado</returns>
+        </member>
+        <member name="M:EduX.Controllers.ObjetivosController.Put(System.Guid,EduX.Domains.Objetivo)">
+            <summary>
+            Altera determinado objetivo
+            </summary>
+            <param name="id">ID de objetivo</param>
+            <param name="objetivo">Objeto objetivo com as alterações</param>
+            <returns>Info do objetivo alterado</returns>
+        </member>
+        <member name="M:EduX.Controllers.ObjetivosController.Delete(System.Guid)">
+            <summary>
+            Exclui um objetivo
+            </summary>
+            <param name="id">ID do objetivo</param>
+            <returns>ID excluído</returns>
+        </member>
+        <member name="M:EduX.Controllers.PerfilController.Get">
+            <summary>
+            Mostra todos os perfis cadastrados
+            </summary>
+            <returns>Lista com todos os perfis</returns>
+        </member>
+        <member name="M:EduX.Controllers.PerfilController.Get(System.Guid)">
+            <summary>
+            Mostra um único perfil
+            </summary>
+            <param name="id">ID de perfil</param>
+            <returns>Um perfil</returns>
+        </member>
+        <member name="M:EduX.Controllers.PerfilController.Post(EduX.Domains.Perfil)">
+            <summary>
+            Cadastra um novo perfil
+            </summary>
+            <param name="perfil">Objeto completo de perfil</param>
+            <returns>Perfil cadastrado</returns>
+        </member>
+        <member name="M:EduX.Controllers.PerfilController.Put(System.Guid,EduX.Domains.Perfil)">
+            <summary>
+            Altera determinado perfil
+            </summary>
+            <param name="id">ID de perfil</param>
+            <param name="perfil">Objeto perfil com as alterações</param>
+            <returns>Info do perfil alterado</returns>
+        </member>
+        <member name="M:EduX.Controllers.PerfilController.Delete(System.Guid)">
+            <summary>
+            Exclui um perfil
+            </summary>
+            <param name="id">ID do perfil</param>
+            <returns>ID excluído</returns>
+        </member>
+        <member name="M:EduX.Controllers.ProfessorTurmaContoller.Get">
+            <summary>
+            Mostra todas os professores cadastrados
+            </summary>
+            <returns>Lista com todos os professores</returns>
+        </member>
+        <member name="M:EduX.Controllers.ProfessorTurmaContoller.Get(System.Guid)">
+            <summary>
+            Mostra um único professor
+            </summary>
+            <param name="id">ID do professor</param>
+            <returns>Um professor</returns>
+        </member>
+        <member name="M:EduX.Controllers.ProfessorTurmaContoller.Post(EduX.Domains.ProfessorTurma)">
+            <summary>
+            Cadastra um novo professor
+            </summary>
+            <param name="professorT">Objeto completo de professor</param>
+            <returns>Professor cadastrado</returns>
+        </member>
+        <member name="M:EduX.Controllers.ProfessorTurmaContoller.Put(System.Guid,EduX.Domains.ProfessorTurma)">
+            <summary>
+            Altera determinado professor
+            </summary>
+            <param name="id">ID de professor</param>
+            <param name="professorT">Objeto professor com as alterações</param>
+            <returns>Info do professor alterado</returns>
+        </member>
+        <member name="M:EduX.Controllers.ProfessorTurmaContoller.Delete(System.Guid)">
+            <summary>
+            Exclui um professor
+            </summary>
+            <param name="id">ID do professor</param>
+            <returns>ID excluído</returns>
+        </member>
+        <member name="M:EduX.Controllers.TurmasController.Get">
+            <summary>
+            Mostra todas as turmas cadastradas
+            </summary>
+            <returns>Lista com todas as turmas</returns>
+        </member>
+        <member name="M:EduX.Controllers.TurmasController.Get(System.Guid)">
+            <summary>
+            Mostra uma única turma
+            </summary>
+            <param name="id">ID da turma</param>
+            <returns>Uma turma</returns>
+        </member>
+        <member name="M:EduX.Controllers.TurmasController.Post(EduX.Domains.Turma)">
+            <summary>
+            Cadastra uma nova turma
+            </summary>
+            <param name="turma">Objeto completo de turma</param>
+            <returns>Turma cadastrada</returns>
+        </member>
+        <member name="M:EduX.Controllers.TurmasController.Put(System.Guid,EduX.Domains.Turma)">
+            <summary>
+            Altera determinada turma
+            </summary>
+            <param name="id">ID de turma</param>
+            <param name="turma">Objeto turma com as alterações</param>
+            <returns>Info da turma alterada</returns>
+        </member>
+        <member name="M:EduX.Controllers.TurmasController.Delete(System.Guid)">
+            <summary>
+            Exclui uma turma
+            </summary>
+            <param name="id">ID da turma</param>
+            <returns>ID excluído</returns>
+        </member>
+        <member name="M:EduX.Controllers.UsuarioController.Get">
+            <summary>
+            Mostra todos os usuários cadastrados
+            </summary>
+            <returns>Lista com todos os usuários</returns>
+        </member>
+        <member name="M:EduX.Controllers.UsuarioController.Get(System.Guid)">
+            <summary>
+            Mostra um único usuário
+            </summary>
+            <param name="id">ID de usuário</param>
+            <returns>Um usuário</returns>
+        </member>
+        <member name="M:EduX.Controllers.UsuarioController.Put(System.Guid,EduX.Domains.Usuario)">
+            <summary>
+            Altera determinado usuário
+            </summary>
+            <param name="id">ID do usuário</param>
+            <param name="usuario">Objeto usuário  com suas alterações</param>
+            <returns>Info do usuário alterado</returns>
+        </member>
+        <member name="M:EduX.Controllers.UsuarioController.Post(EduX.Domains.Usuario)">
+            <summary>
+            Cadastra um novo usuário
+            </summary>
+            <param name="usuario">Objeto completo de usuário</param>
+            <returns>Usuário cadastrado</returns>
+        </member>
+        <member name="M:EduX.Controllers.UsuarioController.Delete(System.Guid)">
+            <summary>
+            Exclui um usuário
+            </summary>
+            <param name="id">ID do usuário</param>
+            <returns>ID excluído</returns>
+        </member>
+    </members>
+</doc>
